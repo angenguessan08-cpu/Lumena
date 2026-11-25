@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1a2040">
+<title>NEXORA</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <nav id="nav"></nav>
+  <div id="content">
+    <header id="top">
+      <div class="gs"><input id="gs" placeholder="🔎 Recherche globale (finances, projets, contacts, notes…)" autocomplete="off"><div id="gsr"></div></div>
+      <button id="topadd">＋ Ajout rapide</button>
+    </header>
+    <main id="main"></main>
+  </div>
+</div>
+<div id="toast"></div>
+<script src="base_excel.js"></script>
+<script src="app.js"></script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});</script>
+</body>
+</html>

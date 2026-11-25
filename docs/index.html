@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="LUMINA">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="theme-color" content="#140e1c">
+<title>LUMINA — Pilotage personnel</title>
+<meta name="description" content="LUMINA : budget, épargne, projets et organisation personnelle, hors-ligne et privé sur votre appareil.">
+<script src="keys-migrate.js"></script>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('lumina.theme')||'dark'}catch(e){document.documentElement.dataset.theme='dark'}
+try{if(document.documentElement.dataset.theme==='light')document.querySelector('meta[name=theme-color]').setAttribute('content','#f4f1f8')}catch(e){}</script>
+</head>
+<body class="locked">
+<div id="auth"></div>
+<div id="app">
+  <nav id="nav" aria-label="Menu principal"></nav>
+  <div id="content">
+    <header id="top">
+      <button id="topadd" class="ghost" aria-label="Ajout rapide"></button>
+      <button id="refresh" class="ghost icon" aria-label="Actualiser les données"></button>
+      <button id="bell" class="ghost icon" aria-label="Alertes"></button>
+      <button id="theme" class="ghost icon" aria-label="Changer de thème"></button>
+      <button id="tu" class="ghost chipuser" aria-label="Mon compte"></button>
+      <button id="lo" class="ghost icon" aria-label="Se déconnecter" title="Se déconnecter"></button>
+    </header>
+    <main id="main"></main>
+  </div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:24px;font-family:sans-serif">LUMINA a besoin de JavaScript pour fonctionner : activez-le dans votre navigateur.</p></noscript>
+<script src="i18n_dict.js"></script>
+<script src="i18n_dict2.js"></script>
+<script src="i18n_dict3.js"></script>
+<script src="i18n_dict4.js"></script>
+<script src="i18n_dict5.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+<script src="modules2.js"></script>
+<script src="modules3.js"></script>
+<script src="modules4.js"></script>
+<script src="modules5.js"></script>
+<script src="modules6.js"></script>
+<script src="modules7.js"></script>
+<script src="modules8.js"></script>
+<script src="modules9.js"></script>
+<script src="modules10.js"></script>
+<script src="modules11.js"></script>
+<script src="modules12.js"></script>
+<script src="modules13.js"></script>
+<script src="modules14.js"></script>
+<script src="pwa.js"></script>
+<script src="auth.js"></script>
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('service-worker.js').catch(()=>{});</script>
+</body>
+</html>

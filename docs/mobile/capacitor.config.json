@@ -1,0 +1,8 @@
+{
+  "appId": "com.lumina.app",
+  "appName": "LUMINA",
+  "webDir": "www",
+  "backgroundColor": "#140e1c",
+  "android": { "allowMixedContent": false },
+  "server": { "androidScheme": "https" }
+}

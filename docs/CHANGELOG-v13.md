@@ -1,0 +1,9 @@
+# LUMINA v13 — neutralité, base vierge, import personnel
+
+| # | Correctif | Fichiers | Migration |
+|---|---|---|---|
+| 1 | **Aucun automatisme dîme / aumônes / culte** : plus de taux de 10 %, plus d'encadré dans le formulaire de revenu, plus de cartes « Dîme » / « Aumônes », plus de ligne « dîme » dans la règle d'engagements, plus de bandeau Budget annuel / Plan, plus de question religieuse (inscription, onboarding, Réglages). L'utilisateur saisit lui-même le montant | `app.js`, `modules3/6/7/8/9.js`, `auth.js` | `migrate13` : profil neutralisé, lignes de dîme auto-générées rendues libres (sans lien ni taux), catégories religieuses migrées vers « Dons et contributions » |
+| 2 | **Base vierge** : `base_excel.js` / `base_excel2.js` ne sont plus chargés ni précachés (déplacés dans `old/data/`) ; plus de bouton « réimporter la base Excel » ; la migration v7, qui réinjectait des écritures et projets personnels, est désactivée ; un nouveau compte reçoit seulement des catégories de départ neutres | `index.html`, `service-worker.js`, `app.js`, `modules7.js`, `auth.js` | Aucune donnée supprimée automatiquement ; bouton « Supprimer les données d'exemple » dans la page Données & Import |
+| 3 | **Page « Données & Import »** : CSV / TSV / texte structuré (séparateur et encodage détectés), JSON, Excel .xlsx .xls .ods (SheetJS local, `vendor/`, chargé à la demande). Détection de l'en-tête et des colonnes (date, libellé, montant ou débit/crédit, catégorie, type, statut, note), dates (jj/mm/aaaa, aaaa-mm-jj, série Excel, « 5 nov. 2026 »), montants (« 1 234,50 », « (500) », « -500 »), correspondance modifiable, aperçu, doublons ignorés, catégories manquantes créées, import annulable | `modules12.js`, `vendor/xlsx.full.min.js` | — |
+| 4 | Barre `#top`, ordre des flux et masquage des catégories vides : inchangés depuis v11 / v12 | — | — |
+| 5 | Cache `lumina-v22` | `service-worker.js` | — |

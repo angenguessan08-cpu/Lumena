@@ -1,0 +1,1 @@
+Ce dossier est ignoré par Git (voir .gitignore). Y ranger les fichiers Excel/CSV personnels.

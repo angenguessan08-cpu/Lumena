@@ -1,0 +1,18 @@
+{
+  "name": "lumina-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Empaquetage Android (Capacitor) de LUMINA",
+  "scripts": {
+    "web": "node copy-web.mjs",
+    "sync": "npm run web && cap sync android",
+    "apk": "cd android && gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.0.0"
+  }
+}
